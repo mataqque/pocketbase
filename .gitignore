@@ -1,0 +1,28 @@
+# Ignorar configuraciones locales
+.env
+.vscode/
+
+# Ignorar archivos y carpetas generadas automáticamente
+pb_data/
+main
+
+# Ignorar contenedor de desarrollo
+.devcontainer/
+
+# Ignorar dependencias de Go descargadas
+/go/pkg/
+/go/bin/
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos de compilación y temporales
+*.out
+*.o
+
+# Ignorar carpetas del sistema operativo
+.DS_Store
+Thumbs.db
+
+# No ignorar estos archivos que deben versionarse
+!.gitignore
