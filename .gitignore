@@ -1,13 +1,8 @@
 # Ignorar configuraciones locales
 .env
-.vscode/
 
 # Ignorar archivos y carpetas generadas automáticamente
-pb_data/
 main
-
-# Ignorar contenedor de desarrollo
-.devcontainer/
 
 # Ignorar dependencias de Go descargadas
 /go/pkg/

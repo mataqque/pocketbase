@@ -1,0 +1,9 @@
+{
+	"editor.fontFamily": " '0xProto Nerd Font Propo', \"monospace\"",
+	"editor.letterSpacing": 0,
+	"terminal.integrated.fontFamily": "DroidSansM Nerd Font",
+	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.fontWeight": "normal",
+	"terminal.integrated.letterSpacing": -0.5,
+	"cSpell.words": ["cartbuy", "Cartbuy", "categoria", "debito", "firstname", "lastname", "persistor", "sxsm", "tailwindcss", "Terminos", "Whatsapp"]
+}

@@ -1,9 +1,8 @@
 FROM debian:latest
 
-RUN apt-get update && apt-get install -y unzip zip nano net-tools
+RUN apt-get update && apt-get install -y unzip zip nano net-tools lsof
 
-RUN apt-get install -y build-essential git curl wget 
-
+RUN apt-get install -y build-essential git curl wget
 ARG PB_VERSION=0.22.14
 ENV GO_VERSION=1.23.0
 
@@ -24,10 +23,11 @@ RUN unzip /tmp/pb.zip -d /pb/
 
 WORKDIR /pb
 
+
 # RUN go mod init myapp && go mod tidy
 
 EXPOSE 8080
 EXPOSE 8081                                 
 
 # start PocketBase
-CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080"]
+CMD ["air", "-c", ".air.toml"]

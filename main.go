@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -18,9 +19,10 @@ func main() {
     app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
         e.Router.GET("/*", apis.StaticDirectoryHandler(os.DirFS("./pb_public"), false))
         
-        e.Router.GET("/hello", func(c echo.Context) error {
+        e.Router.GET("/hola", func(c echo.Context) error {
             //get list from database
-            return c.JSON(http.StatusOK, map[string]string{"message": "Hola mundo!"})
+            fmt.Println("prove")
+            return c.JSON(http.StatusOK, map[string]string{"message": "Hola mundo"})
         }, apis.ActivityLogger(app))
         
         return nil
