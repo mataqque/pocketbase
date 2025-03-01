@@ -30,4 +30,5 @@ EXPOSE 8080
 EXPOSE 8081                                 
 
 # start PocketBase
-CMD ["air", "-c", ".air.toml"]
+CMD ["./pocketbase", "serve", "--http=0.0.0.0:8080"]
+# CMD ["air", "-c", ".air.toml"]

@@ -15,5 +15,4 @@ services:
         user: 'root'
 networks:
     network-formula:
-        name: network-bosqo
-        external: true
+        name: network-formula

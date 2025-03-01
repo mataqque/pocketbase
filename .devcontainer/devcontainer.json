@@ -16,13 +16,10 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"customizations": {
 		"vscode": {
-			"extensions": [
-				"golang.go",
-				"ms-azuretools.vscode-docker",
-				"Codeium.codeium"
-			]
+			"extensions": ["golang.go", "ms-azuretools.vscode-docker", "Codeium.codeium"]
 		}
 	},
+	"remoteUser": "root",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
